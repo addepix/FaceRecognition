@@ -58,9 +58,9 @@ video.addEventListener('play', async () => {
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
 
         //faceapi.draw.drawDetections(canvas, resizeDetections);
-        //faceapi.draw.drawFaceLandmarks(canvas, resizeDetections);
+        faceapi.draw.drawFaceLandmarks(canvas, resizeDetections);
         //faceapi.draw.drawFaceExpressions(canvas, resizeDetections);
-
+/*
         const maxDescriptorDistance = 0.6;
         const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, maxDescriptorDistance);
 
@@ -72,7 +72,7 @@ video.addEventListener('play', async () => {
             const drawBox = new faceapi.draw.DrawBox(box, { label: text });
             drawBox.draw(canvas);
         });
-
+*/
     }, 100);
 });
 
